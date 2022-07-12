@@ -18,6 +18,7 @@ package com.example.android.dagger.registration
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.example.android.dagger.MyApplication
 import com.example.android.dagger.R
@@ -28,11 +29,18 @@ import javax.inject.Inject
 
 class RegistrationActivity : AppCompatActivity() {
 
+    lateinit var registrationComponent: RegistrationComponent
+
     @Inject
     lateinit var registrationViewModel: RegistrationViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        (application as MyApplication).appComponent.inject(this)
+        registrationComponent =
+            (application as MyApplication).appComponent.registrationComponent().create()
+
+        registrationComponent.inject(this)
+
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registration)
 
@@ -55,6 +63,7 @@ class RegistrationActivity : AppCompatActivity() {
      * Callback from T&CsFragment when TCs have been accepted
      */
     fun onTermsAndConditionsAccepted() {
+        Log.d("mohsen", System.identityHashCode(registrationViewModel).toString())
         registrationViewModel.registerUser()
         startActivity(Intent(this, MainActivity::class.java))
         finish()
