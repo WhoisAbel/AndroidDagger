@@ -2,12 +2,7 @@
 
 This folder contains the source code for the "Using Dagger in your Android app" codelab.
 
-The codelab is built in multiple GitHub branches:
-* `main` is the codelab's starting point.
-* `1_registration_main`, `2_subcomponents`, and `3_dagger_app` are intermediate
-steps towards the solution.
-* `solution` contains the solution to this codelab.
-
+The codelab is built in multiple GitHub branches but I modified my branch.
 
 # Introduction
 Dependency injection is a technique widely used in programming and well suited
@@ -31,14 +26,9 @@ of using Dagger in your Android app are.
 3. Import the sample into Android Studio.
 4. Build and run the sample.
 
+# Screens
 
-# Comparison between different branches
-* Step 1 - `main` to `1_registration_main` ([Comparison](https://github.com/googlecodelabs/android-dagger/compare/main...1_registration_main))
-* Step 2 - `1_registration_main` to `2_subcomponents` ([Comparison](https://github.com/googlecodelabs/android-dagger/compare/1_registration_main...2_subcomponents))
-* Step 3 - `2_subcomponents` to `3_dagger_app` ([Comparison](https://github.com/googlecodelabs/android-dagger/compare/2_subcomponents...3_dagger_app))
-* Step 4 - `3_dagger_app` to `solution` ([Comparison](https://github.com/googlecodelabs/android-dagger/compare/3_dagger_app...solution))
-* [Full codelab comparison](https://github.com/googlecodelabs/android-dagger/compare/main...solution)
-
+![dagger](https://user-images.githubusercontent.com/92686655/178659941-8d1d3e96-e876-47da-8504-1d73a6bb4c56.png)
 
 # License
 
