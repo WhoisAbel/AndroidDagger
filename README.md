@@ -2,7 +2,7 @@
 
 This folder contains the source code for the "Using Dagger in your Android app" codelab.
 
-The codelab is built in multiple GitHub branches but I modified my branch.
+The codelab is built in multiple GitHub branches but I modified branches.
 
 # Introduction
 Dependency injection is a technique widely used in programming and well suited
